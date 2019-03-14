@@ -1,0 +1,9 @@
+// Override default variables before the import
+$theme-colors: (
+  "primary": #0074d9
+);
+
+// Import Bootswatch and its default variables
+@import "bootswatch_theme_darkly/_variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "bootswatch_theme_darkly/_bootswatch";

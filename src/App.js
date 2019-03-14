@@ -6,13 +6,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <NavBar/>
-        <header className="App-header">
+      <NavBar />
+      <div className="App-body" >
         <img src={logo} className="Large-App-logo" alt="logo" />
           <p>
             Welcome! This site is under construction and will be up shortly.
           </p>
-        </header>
+        </div>
       </div>
     );
   }
@@ -21,7 +21,6 @@ class App extends Component {
 class NavBar extends App{
   render(){
     return(
-
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="#"> 
           <img src={logo} className="App-logo" alt="logo" />
@@ -45,7 +44,7 @@ class NavBar extends App{
           </form>
         </div>
       </nav>
-    )
+    );
   }
 }
 

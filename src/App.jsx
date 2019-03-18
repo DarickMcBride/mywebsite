@@ -1,23 +1,30 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
-//import { browserHistory } from 'react-router';
-import HomePage from './HomePage';
-import NavBar from './NavBar';
+import {Route,HashRouter} from "react-router-dom";
 import './App.css';
+
+import NavBar from './NavBar';
+import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import AboutPage from './AboutPage';
+import logo from './logo.svg'
+
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
+      <HashRouter>
+        <div >
           <NavBar />
-          <Route name="home" exact path="/" component={HomePage} />
-          <Route name="projects" exact path="/projects" component={ProjectsPage} />
-          <Route name="about" exact path="/about" component={AboutPage} />
         </div>
-      </Router>
+
+        <div className="Main-body" >
+          <img src={logo} className="Large-app-logo" alt="logo" />
+          <Route exact path="/" component={HomePage}/>
+          <Route path="/projects" component={ProjectsPage}/>
+          <Route path="/about" component={AboutPage}/>
+        </div>
+
+      </HashRouter>
     );
   }
 }

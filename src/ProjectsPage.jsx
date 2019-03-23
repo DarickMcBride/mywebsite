@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 class ProjectsPage extends Component {
   render() {
     return (
-
-          <p>
-            Welcome! You have reached the Projects page. 
-            This site is under construction and will be up shortly.
-          </p>
-
+      <div className="projects-page">
+          <h1 className='text-secondary'>
+            Oh no!
+          </h1>
+          <h5 className='text-muted'> 
+              I am still working on the content for the projects section. It will be available soon
+          </h5>
+      </div>
     )
   }
 }

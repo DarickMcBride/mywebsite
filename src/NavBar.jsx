@@ -19,10 +19,16 @@ class NavBar extends Component {
               <NavLink className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/about">About</NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/projects">Projects</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">About</NavLink>
+              <NavLink className="nav-link" to="/experience">Experience</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>

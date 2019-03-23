@@ -7,22 +7,24 @@ import NavBar from './NavBar';
 import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import AboutPage from './AboutPage';
-import logo from './logo.svg'
+import ContactPage from './ContactPage';
+import ExperiencePage from './ExperiencePage';
+
 
 
 class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div >
+        <div className="my-navbar">
           <NavBar />
         </div>
-
         <div className="Main-body" >
-          <img src={logo} className="Large-app-logo" alt="logo" />
           <Route exact path="/" component={HomePage}/>
-          <Route path="/projects" component={ProjectsPage}/>
           <Route path="/about" component={AboutPage}/>
+          <Route path="/projects" component={ProjectsPage}/>
+          <Route path="/experience" component={ExperiencePage}/>
+          <Route path="/contact" component={ContactPage}/>
         </div>
 
       </HashRouter>

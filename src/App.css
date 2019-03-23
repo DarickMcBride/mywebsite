@@ -12,15 +12,22 @@
   pointer-events: none;
 }
 
+.text-smaller {
+  font-size: calc(10px + 2vmin)
+}
+
 .Main-body {
   background-color: #303030;
   min-height: 100vh;
+}
+
+.intro {
+  padding-top: 5%;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: normal;
+  font-size: calc(70px + 2vmin);
   color: white;
 }
 
@@ -28,3 +35,12 @@
   color: #61dafb;
 }
 
+.contact-page, .experience-page, .projects-page, .about-page {
+  padding-top: 5%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  font-size: calc(70px + 2vmin);
+  color: white;
+}

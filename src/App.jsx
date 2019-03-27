@@ -13,7 +13,7 @@ class App extends Component {
           <div >
             <NavBar />
           </div>
-          <div className="Main-body" >
+          <div className="main-body" >
             <HomePage id="home"/>
             <AboutPage id="about"/>
             <ExperiencePage id="experience"/>

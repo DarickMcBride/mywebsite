@@ -9,6 +9,8 @@ import {
     NavLink
 } from 'reactstrap';
 import logo from '../logo.svg'
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 
@@ -30,8 +32,8 @@ class NavBar extends React.Component {
     return (
         <div>
             <Navbar className="my-navbar" id="NavBar"  fixed="top" dark expand="md">
-                <NavbarBrand href="#Home">
-                    <img src={logo} className="App-logo" alt="logo" />
+                <NavbarBrand >
+                    <img src={logo} className="app-logo" alt="logo" onClick={this.scrollToTop}/>
                 </NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
 
@@ -39,12 +41,12 @@ class NavBar extends React.Component {
                     <Nav className="ml-auto"  navbar>
                         <NavItem>
                             <NavLink>
-                                <a href="#Home"> Home</a>
+                                <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}> Home</Link>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink> 
-                                <a href="#About">About</a>
+                                <Link to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
                             </NavLink>
                         </NavItem>
                         <NavItem>

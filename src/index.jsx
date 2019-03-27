@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './styles/custom.scss'
-//import './styles/index.css';
+import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

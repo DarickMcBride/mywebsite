@@ -13,7 +13,7 @@ class App extends Component {
           <div >
             <NavBar />
           </div>
-          <div className="Main-body" data-spy="scroll" data-target="#NavBar" data-offset="0">
+          <div className="Main-body" >
             <HomePage id="home"/>
             <AboutPage id="about"/>
             <ExperiencePage id="experience"/>

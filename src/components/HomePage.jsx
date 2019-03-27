@@ -18,6 +18,12 @@ class HomePage extends Component {
             <Button outline color="secondary" href="mailto:darickmcbride@me.com" target="_top">
               Say Hello
             </Button>{' '}
+            <Button outline color="secondary" href="https://www.linkedin.com/in/darickmcbride/" target="_top">
+              Connect with me on LinkedIn
+            </Button>{' '}
+            <Button outline color="secondary" href="https://github.com/DarickMcBride" target="_top">
+              Check out my Github
+            </Button>{' '}
           </div>
       </div>
     )

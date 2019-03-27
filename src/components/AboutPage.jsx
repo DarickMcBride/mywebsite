@@ -4,7 +4,7 @@ class AboutPage extends Component {
   render() {
     return (
       <div className="about-page">
-          <h1 className='text-secondary'>
+          <h1 className='text-secondary display-1'>
             Oh no!
           </h1>
           <h5 className='text-muted'> 

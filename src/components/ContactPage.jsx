@@ -5,7 +5,7 @@ class ContactPage extends Component {
   render() {
     return (
       <div className="contact-page">
-          <h1 className='text-secondary'>
+          <h1 className='text-secondary display-1'>
             Oh no!
           </h1>
           <h5 className='text-muted'> 

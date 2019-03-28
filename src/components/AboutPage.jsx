@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class AboutPage extends Component {
   render() {
     return (
-      <div className="about-page">
+      <div className="about-page" id="about">
           <h1 className='text-secondary display-1'>
             Oh no!
           </h1>

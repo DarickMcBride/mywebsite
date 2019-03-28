@@ -9,8 +9,7 @@ import {
     NavLink
 } from 'reactstrap';
 import logo from '../logo.svg'
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll} from 'react-scroll'
 
 
 
@@ -28,36 +27,83 @@ class NavBar extends React.Component {
           isOpen: !this.state.isOpen
         });
       }
+
+      scrollToTop = () => {
+        scroll.scrollToTop();
+      };
+
+
     render(){
     return (
         <div>
             <Navbar className="my-navbar" id="NavBar"  fixed="top" dark expand="md">
-                <NavbarBrand >
-                    <img src={logo} className="app-logo" alt="logo" onClick={this.scrollToTop}/>
+                <NavbarBrand onClick={this.scrollToTop}>
+                    <img src={logo} className="app-logo" alt="logo" />
                 </NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
 
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto"  navbar>
                         <NavItem>
-                            <NavLink>
-                                <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}> Home</Link>
+                            <NavLink 
+                                tag={Link}    
+                                to="home" 
+                                activeClass="active"
+                                spy={true} 
+                                smooth={true} 
+                                duration={500}>
+                                Home
                             </NavLink>
                         </NavItem>
+                        
                         <NavItem>
-                            <NavLink> 
-                                <Link to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
+                            <NavLink
+                                tag={Link}
+                                to="about" 
+                                activeClass="active"
+                                spy={true} 
+                                smooth={true} 
+                                duration={500}>
+                                About
                             </NavLink>
                         </NavItem>
+
                         <NavItem>
-                            <NavLink href="#projects">Projects</NavLink>
+                            <NavLink
+                                tag={Link}
+                                to="experience" 
+                                activeClass="active"
+                                spy={true} 
+                                smooth={true} 
+                                duration={500}>
+                                Experience
+                            </NavLink>
                         </NavItem>
+
                         <NavItem>
-                            <NavLink href="#experience">Experience</NavLink>
+                            <NavLink
+                                tag={Link}
+                                to="projects" 
+                                activeClass="active"
+                                spy={true} 
+                                smooth={true} 
+                                duration={500}>
+                                Projects
+                            </NavLink>
                         </NavItem>
+
                         <NavItem>
-                            <NavLink href="#contact">Contact</NavLink>
+                            <NavLink
+                                tag={Link}
+                                to="contact" 
+                                activeClass="active"
+                                spy={true} 
+                                smooth={true} 
+                                duration={500}>
+                                Contact
+                            </NavLink>
                         </NavItem>
+
                     </Nav>
                 </Collapse>
 
